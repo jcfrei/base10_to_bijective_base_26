@@ -1,0 +1,1 @@
+# base10_to_bijective_base_26
