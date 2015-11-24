@@ -9,7 +9,9 @@ function [out] = base10_to_bijective_base_26(m)
     out = char(fliplr(base10tobasek(m,26)+64));
 end
 function [a] = base10tobasek(m,k)
-    if(m<0)
+    if(~isnumeric(m) || ~isnumeric(k) || ...
+       round(m)~=m || round(k) ~= k || ...
+       m<0 || k<0)
        error('m must be positive integer');
     elseif(m==0)
         a='';
