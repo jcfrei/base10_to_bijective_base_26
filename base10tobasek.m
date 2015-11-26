@@ -3,8 +3,8 @@ function [a] = base10tobasek(m,k)
     %
     % in: integer
     %
-    % out: int array
-    %
+    % out: double array for m >= 1
+    %      char for m==0
     % author: jonathan frei
     %
     if(~isnumeric(m) || ~isnumeric(k) || ...
