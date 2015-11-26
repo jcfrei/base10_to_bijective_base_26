@@ -3,7 +3,7 @@ function [a] = base10tobasek(m,k)
     %
     % in: integer
     %
-    % out: int array
+    % out: array
     %
     % author: jonathan frei
     %

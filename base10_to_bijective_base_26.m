@@ -6,5 +6,5 @@ function [out] = base10_to_bijective_base_26(m)
     % output: char
     %
     % jonathan frei, 2015
-    out = char(fliplr(base10tobasek(m,26)+64));
+    out = char(base10tobasek(m,26)+64);
 end
